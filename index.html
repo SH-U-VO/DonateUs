@@ -39,8 +39,8 @@
 
         <!-- button section -->
         <div class="flex-wrap flex justify-center gap-5">
-            <button class="btn btn-wide">Donation</button>
-            <button class="btn btn-wide">History</button>
+            <button id="btn-1" class="btn btn-wide">Donation</button>
+            <button id="btn-2" class="btn btn-wide">History</button>
         </div>
 
         <!-- nav section ends -->
@@ -49,7 +49,7 @@
 
     <!-- main section starts here -->
 
-    <main class="md:container md:mx-auto">
+    <main id="main" class="md:container md:mx-auto">
 
 
 
@@ -130,14 +130,40 @@
                     donation plays a vital role in alleviating their suffering and aiding in their recovery. Please
                     consider making a donation to support these brave individuals in their time of need.</p>
                 <fieldset class="fieldset">
-                    <input id="donate-amount-3"  type="text" class="input mb-5" placeholder="Write Donation Amount" />
+                    <input id="donate-amount-3" type="text" class="input mb-5" placeholder="Write Donation Amount" />
                 </fieldset>
                 <div class="card-actions justify-end">
                     <button id="donate-now-3" class="btn btn-block bg-[#B4F461]">Donate Now</button>
                 </div>
             </div>
         </div>
+
+        <!-- modal -->
+
+        <div >
+            <dialog id="my-modal" class="modal ">
+                <div class="modal-box flex flex-col items-center">
+                    <h3 class="font-bold text-3xl mb-4">Congrates!</h3>
+                    <img src="assets/coin.png" alt="">
+                    <p class="py-4">
+                        You Have Donated for Humankind
+                    </p>
+                    <h4 class="font-bold text-lg">Successfully</h4>
+                    <div class="modal-action">
+                        <form method="dialog">
+                            <button class="btn">Close Confirmation</button>
+                        </form>
+                    </div>
+                </div>
+            </dialog>
+        </div>
     </main>
+
+    <!-- footer starts here -->
+
+    <footer id="donationHistory" class="hidden">
+        
+    </footer>
     <script src="js/function.js"></script>
     <script src="js/home.js"></script>
 </body>
